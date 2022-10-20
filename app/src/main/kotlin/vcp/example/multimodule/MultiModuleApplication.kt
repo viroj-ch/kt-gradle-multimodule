@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class MultiModuleApplication
 
 fun main(args: Array<String>) {
-	runApplication<MultiModuleApplication>(*args)
+    runApplication<MultiModuleApplication>(*args)
 }
