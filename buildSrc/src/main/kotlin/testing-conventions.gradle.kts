@@ -3,6 +3,20 @@ import kotlinx.kover.api.DefaultIntellijEngine
 plugins {
     java
     id("org.jetbrains.kotlinx.kover")
+    id("com.diffplug.spotless")
+    id("com.github.spotbugs")
+}
+
+dependencies {
+    spotbugs("org.slf4j:slf4j-nop:1.7.36")
+    spotbugs("com.github.spotbugs:spotbugs:4.1.4")
+    spotbugsPlugins("com.h3xstream.findsecbugs:findsecbugs-plugin:1.12.0")
+}
+
+spotbugs {
+    effort.set(com.github.spotbugs.snom.Effort.MAX)
+    excludeFilter.set(file("../spotbugs-exclude.xml")) // relative from module that plugins this convention file
+    includeFilter.set(file("../spotbugs-include.xml")) // relative from module that plugins this convention file
 }
 
 testing {

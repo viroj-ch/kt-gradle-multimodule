@@ -19,4 +19,6 @@ dependencies {
 
     // testing-conventions
     implementation("org.jetbrains.kotlinx:kover:0.6.1") // code coverage
+    implementation("com.diffplug.spotless:spotless-plugin-gradle:5.14.0") //code reformat
+    implementation("com.github.spotbugs.snom:spotbugs-gradle-plugin:5.0.13") //find bug
 }
