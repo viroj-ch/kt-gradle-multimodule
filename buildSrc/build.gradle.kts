@@ -15,7 +15,8 @@ dependencies {
 
     // spring-conventions
     implementation("org.springframework.boot:spring-boot-gradle-plugin:2.7.4")
-    implementation("org.jetbrains.kotlin:kotlin-allopen:1.6.21")
+    implementation("org.jetbrains.kotlin:kotlin-allopen:1.6.21") //plugin.spring
+    implementation("org.jetbrains.kotlin:kotlin-noarg:1.6.21") // plugin.jpa
 
     // testing-conventions
     implementation("org.jetbrains.kotlinx:kover:0.6.1") // code coverage
