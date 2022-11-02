@@ -1,7 +1,8 @@
 plugins {
     id("kotlin-conventions")
     id("spring-conventions")
-    id("testing-conventions")
+    id("test-conventions")
+    id("integration-test-conventions")
 }
 
 dependencies {
